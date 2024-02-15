@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="guess.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Handjet:wght@100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+  <title>Number Guessing Game</title>
+</head>
+
+<body>
+  <header>
+    <a href="https://diwashpandey164.github.io/Games/">
+      <button class="button">
+        <div class="button-box">
+          <span class="button-elem">
+            <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
+              ></path>
+            </svg>
+          </span>
+          <span class="button-elem">
+            <svg viewBox="0 0 46 40">
+              <path
+                d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
+              ></path>
+            </svg>
+          </span>
+        </div>
+      </button>
+      
+    </a>
+    <nav>
+      <a href="contact.html">Contact</a>
+      <a href="privacypolicy.html">Privacy Policy</a>
+    </nav>
+  </header>
+  <div class="playnow">
+    <h1>Number Guessing Game!</h1>
+    <!-- Display the current number -->
+    <div>
+      <div class="container">
+        <input required="" type="text" name="text" class="input" id="input">
+        <label class="label">Enter Your Guess here....</label>
+      </div>
+      <!-- Button to start game -->
+      <button id="startBtn" onclick="startGame()">
+        G U E S S
+        <div id="clip">
+          <div id="leftTop" class="corner"></div>
+          <div id="rightBottom" class="corner"></div>
+          <div id="rightTop" class="corner"></div>
+          <div id="leftBottom" class="corner"></div>
+        </div>
+        <span id="rightArrow" class="arrow"></span>
+        <span id="leftArrow" class="arrow"></span>
+      </button>
+    </div>
+    <!-- Message area for displaying messages -->
+    <div id="result"></div>
+    <p></p>
+    <h5></h5>
+    <!-- Game instructions -->
+    <ul style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: large;">
+      <h4>Instructions</h4>
+      <li>Guess a number between 1 and 100.</li>
+      <li>You have 10 attempts to guess the correct number.</li>
+      <li>After each attempt, I will give you a hint: higher or lower?</li>
+    </ul>
+  </div>
+  <footer>
+    <!-- copyright -->
+   <p> &copy;2023 by Diwash. All rights reserved.<br /> </p>
+  </footer>
+</body>
+<script src="guess.js">
+  
+</script>
+
+</html> 
